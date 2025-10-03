@@ -36,5 +36,4 @@ jobs:
 
     - name: Run E2E tests
       run: |
-        robot -d ./logs -t smoke ./tests
-        
+        robot -d ./logs -t smoke tests
