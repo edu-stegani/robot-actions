@@ -33,3 +33,8 @@ jobs:
     - name: Browser init
       run: |
         rfbrowser init
+
+    - name: Run E2E tests
+      run: |
+        robot -d ./logs -t smoke ./tests
+        
