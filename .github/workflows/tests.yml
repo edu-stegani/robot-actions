@@ -45,7 +45,7 @@ jobs:
         report_path: logs
 
     - name: Upload Report Zip
-      uses: actions/upload-pages-artifact@v4.0.0
+      uses: actions/upload-artifact@v4.6.2
       with:
         name: test-report
         path: logs
