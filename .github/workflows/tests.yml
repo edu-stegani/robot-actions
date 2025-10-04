@@ -4,10 +4,12 @@
 name: E2E tests
 
 on:
+  # Trigger de execução do workflow em push ou pull request na branch main, ou manualmente via workflow_dispatch no GitHub Actions
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   chrome:
